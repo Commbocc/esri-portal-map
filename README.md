@@ -38,7 +38,7 @@ This is shorthand for `git subtree push --prefix dist github gh-pages` where `di
 <!-- assumes Bootstrap 3 style included -->
 <link rel="stylesheet" href="https://js.arcgis.com/4.4/esri/css/main.css">
 <script src="https://js.arcgis.com/4.4/" data-esri-loader="loaded"></script>
-<script type="text/javascript" src="./static/js/manifest.js"></script>
-<script type="text/javascript" src="./static/js/vendor.js"></script>
-<script type="text/javascript" src="./static/js/app.js"></script>
+<script type="text/javascript" src="./dist/static/js/manifest.js"></script>
+<script type="text/javascript" src="./dist/static/js/vendor.js"></script>
+<script type="text/javascript" src="./dist/static/js/app.js"></script>
 ```

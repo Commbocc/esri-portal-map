@@ -6,18 +6,16 @@ import App from './App'
 
 Vue.config.productionTip = false
 
+var appElem = document.getElementById('app')
+
 /* eslint-disable no-new */
 new Vue({
-	el: '#app',
+	el: appElem,
 	// router,
 	template: '<app :portal-id="portalId" :class="classes"></app>',
 	components: { 'app': App },
 	data: {
-		classes: null,
-		portalId: null
-	},
-	beforeMount () {
-		this.classes = this.$el.className
-		this.portalId = this.$el.dataset.portalId
+		classes: appElem.className,
+		portalId: appElem.dataset.portalId
 	}
 })
