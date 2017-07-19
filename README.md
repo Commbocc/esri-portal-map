@@ -22,13 +22,16 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## Deployment
 
-Push the distribution folder to GitHub Pages with the following command:
+Push the distribution directory in source control to GitHub Pages.
 
 ``` bash
+# push to GitHub Pages
 npm run push-gh
 ```
 
-This is shorthand for `git subtree push --prefix dist github gh-pages` where `dist` is the directory to push, `github` is the remote name, and `gh-pages` is the branch. This can be modified in the `package.json` file.
+> This is shorthand for `git subtree push --prefix dist github gh-pages` where `dist` is the directory to push, `github` is the remote name, and `gh-pages` is the branch. This can be modified in the `package.json` file.
+
+Place the following in your HTML file:
 
 ``` html
 <div id="app"></div>

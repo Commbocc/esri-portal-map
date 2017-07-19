@@ -16,6 +16,6 @@ new Vue({
 	components: { 'app': App },
 	data: {
 		classes: appElem.className,
-		portalId: appElem.dataset.portalId
+		portalId: appElem.getAttribute('data-portal-id')
 	}
 })
