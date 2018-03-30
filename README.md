@@ -11,6 +11,9 @@
   <div is="EsriPortalMap" portal-id="b51fb4e76e154e1b93b630eac3ea94ae"></div>
 </div>
 
+<!-- Esri Stylesheet -->
+<link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+
 <!-- include babel-polyfill for IE11 Promise support -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
 <!-- include Vue -->
