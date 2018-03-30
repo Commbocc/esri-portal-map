@@ -16,7 +16,7 @@
 <!-- include Vue -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <!-- set HcAddressParcelForm Vue component -->
-<script src="https://commbocc.github.io/hc-address-parcel-form/dist/build.var.js"></script>
+<script src="https://commbocc.github.io/esri-portal-map/dist/build.var.js"></script>
 
 <script type="text/javascript">
 var app = new Vue({
