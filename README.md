@@ -15,7 +15,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script>
 <!-- include Vue -->
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
-<!-- set HcAddressParcelForm Vue component -->
+<!-- set EsriPortalMap Vue component -->
 <script src="https://commbocc.github.io/esri-portal-map/dist/build.var.js"></script>
 
 <script type="text/javascript">
