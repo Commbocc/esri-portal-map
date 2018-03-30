@@ -1,50 +1,19 @@
 <template>
-	<div id="app" class="embed-responsive embed-responsive-16by9">
-		<div id="mapDiv" class="embed-responsive-item"></div>
-		<!-- <router-view></router-view> -->
-	</div>
+  <div id="app" class="container">
+
+    <!-- water bottle filling stations -->
+    <div is="PortalMap" portal-id="dc2e5a7337264f5d8825f3b8a94c5eaf"></div>
+
+  </div>
 </template>
 
 <script>
-import * as esriLoader from 'esri-loader'
+import PortalMap from './components/PortalMap'
 
 export default {
-	name: 'app',
-	props: ['portalId'],
-	data () {
-		return {
-			webmap: null,
-			mapview: null
-		}
-	},
-	mounted () {
-
-		esriLoader.dojoRequire([
-			'esri/WebMap',
-			'esri/views/MapView',
-			'esri/widgets/Home'
-		], (WebMap, MapView, Home) => {
-
-			this.webmap = new WebMap({
-				portalItem: {
-					id: this.portalId || 'b51fb4e76e154e1b93b630eac3ea94ae'
-				}
-			})
-
-			this.mapview = new MapView({
-				container: 'mapDiv',
-				map: this.webmap
-			})
-
-			var homeWidget = new Home({
-				view: this.mapview
-			})
-
-			// adds the home widget to the top left corner of the MapView
-			this.mapview.ui.add(homeWidget, "top-left")
-
-		});
-
-	}
+  name: 'app',
+  components: {
+    PortalMap
+  }
 }
 </script>
