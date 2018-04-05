@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import * as esriLoader from 'esri-loader'
+import { loadModules } from 'esri-loader'
 
 export default {
   props: {
@@ -25,7 +25,7 @@ export default {
     }
   },
   created () {
-    return esriLoader.loadModules([
+    return loadModules([
       'esri/WebMap',
       'esri/views/MapView',
       'esri/widgets/Home'
@@ -46,8 +46,12 @@ export default {
         var homeWidget = new Home({
           view: this.mapview
         })
-        this.mapview.ui.add(homeWidget, "top-left")
+        this.mapview.ui.add(homeWidget, 'top-left')
       }
+
+      this.webmap.when(wm => {
+        this.$emit('mapready', this)
+      })
     })
   }
 }

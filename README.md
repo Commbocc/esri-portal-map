@@ -1,4 +1,4 @@
-# esri-portal-maps
+# esri-portal-map
 
 > A Vue.js project
 
@@ -8,7 +8,7 @@
 
 ```html
 <div id="app">
-  <div is="EsriPortalMap" portal-id="b51fb4e76e154e1b93b630eac3ea94ae"></div>
+  <div is="EsriPortalMap" portal-id="b51fb4e76e154e1b93b630eac3ea94ae" @mapready="mapready"></div>
 </div>
 
 <!-- Esri Stylesheet -->
@@ -26,6 +26,13 @@ var app = new Vue({
   el: '#app',
   components: {
     EsriPortalMap: EsriPortalMap
+  },
+  methods: {
+    mapready (map) {
+      // do things with map
+      // map.webmap
+      // map.mapview
+    }
   }
 });
 </script>
@@ -41,7 +48,7 @@ Example Single File Component
 <!-- App.vue -->
 <template>
   <main>
-    <div is="EsriPortalMap" portal-id="b51fb4e76e154e1b93b630eac3ea94ae"></div>
+    <div is="EsriPortalMap" portal-id="b51fb4e76e154e1b93b630eac3ea94ae" @mapready="mapready"></div>
   </main>
 </template>
 

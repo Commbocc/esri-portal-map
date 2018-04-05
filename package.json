@@ -1,5 +1,5 @@
 {
-  "name": "esri-portal-maps",
+  "name": "esri-portal-map",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "Kevin McCarthy <mccarthyk@hcflgov.net>",
@@ -13,7 +13,6 @@
     "build": "npm run build_var && npm run build_cjs2"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
     "esri-loader": "^2.2.0",
     "vue": "^2.5.11"
   },
@@ -25,6 +24,7 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
     "cross-env": "^5.0.5",
