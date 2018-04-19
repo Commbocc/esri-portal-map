@@ -56,3 +56,7 @@ export default {
   }
 }
 </script>
+
+<style media="screen">
+@import url('https://js.arcgis.com/4.6/esri/css/main.css');
+</style>
