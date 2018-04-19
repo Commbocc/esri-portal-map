@@ -49,7 +49,7 @@ export default {
         this.mapview.ui.add(homeWidget, 'top-left')
       }
 
-      this.webmap.when(wm => {
+      this.mapview.when(wm => {
         this.$emit('mapready', this)
       })
     })
