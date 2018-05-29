@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>esri-portal-map</title>
-    <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>esri-portal-map</title>
 
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
-  </body>
+  <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <script src="./dist/build.js"></script>
+  <script type="text/javascript">
+  var PortalMap = Vue.extend(EsriPortalMap)
+  var map = new PortalMap({propsData: {
+    portalId: 'b51fb4e76e154e1b93b630eac3ea94ae'
+  }}).$mount('#map')
+  </script>
+</body>
 </html>

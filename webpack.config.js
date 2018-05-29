@@ -3,14 +3,14 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: [
-    './src/components/PortalMap.vue'
+    './src/main.js'
   ],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
-    filename: 'build.cjs2.js',
-    libraryExport: 'default',
-    libraryTarget: 'commonjs2'
+    filename: 'build.js',
+    library: 'EsriPortalMap',
+    libraryExport: 'default'
   },
   module: {
     rules: [
